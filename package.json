@@ -1,20 +1,21 @@
 {
-  "name": "video-code",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "parcel source/01-Installing-MUI/index.html"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.3"
-  },
-  "dependencies": {
-    "@material-ui/core": "^4.1.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  }
+	"name": "material-ui-v4-demos",
+	"version": "1.0.0",
+	"scripts": {
+		"start": "parcel source/01-Installing-MUI/index.html"
+	},
+	"keywords": [
+		"Material UI",
+		"React"
+	],
+	"author": "Thomas Greco",
+	"license": "ISC",
+	"devDependencies": {
+		"parcel-bundler": "^1.12.3"
+	},
+	"dependencies": {
+		"@material-ui/core": "^4.1.2",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6"
+	}
 }
