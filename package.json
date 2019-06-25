@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel source/index.html"
+    "start": "parcel source/02-Style-APIs-Intro/index.html"
   },
   "keywords": [],
   "author": "",
