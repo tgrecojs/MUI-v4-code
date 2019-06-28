@@ -6,9 +6,9 @@ import HOCDemo from './demo.hoc'
 
 const App = () => (
 	<>
-		<HOCDemo />
 		<HookDemo />
 		<StyledDemo />
+		<HOCDemo />
 	</>
 )
 

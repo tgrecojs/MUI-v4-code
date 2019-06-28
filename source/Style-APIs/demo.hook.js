@@ -1,16 +1,16 @@
 import React from 'react'
 import { Button } from '@material-ui/core'
 import { makeStyles } from '@material-ui/styles'
-import styles from './styles'
+import styles from './styles.shared'
 
 const useStyles = makeStyles(styles)
 
 const Demo = () => {
-	const classes = useStyles()
+	const { root, btn } = useStyles()
 	return (
-		<div className={`${classes.root}`}>
-			<Button className={`${classes.btn}`} variant="text">
-				Hooray for Hooks!
+		<div className={`${root}`}>
+			<Button className={`${btn}`} variant="contained" fullWidth>
+				Hooray for hooks!
 			</Button>
 		</div>
 	)

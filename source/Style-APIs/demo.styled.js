@@ -1,16 +1,14 @@
 import React from 'react'
 import { Button } from '@material-ui/core'
 import { styled } from '@material-ui/styles'
-import styles from './styles'
+import styles from './styles.shared'
 
 const StyledDiv = styled('div')(styles.root)
 const StyledButton = styled(Button)(styles.btn)
 
 const Demo = () => (
 	<StyledDiv>
-		<StyledButton variant="contained" size="small">
-			Shoutout Styled Components!
-		</StyledButton>
+		<StyledButton size="small">Shoutout Styled Components!</StyledButton>
 	</StyledDiv>
 )
 
