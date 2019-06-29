@@ -1,20 +1,20 @@
 {
-  "name": "video-code",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "parcel source/index.html"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.3"
-  },
-  "dependencies": {
-    "@material-ui/core": "^4.1.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  }
+	"name": "video-code",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "parcel source/Style-APIs/index.html"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"parcel-bundler": "^1.12.3"
+	},
+	"dependencies": {
+		"@material-ui/core": "^4.1.2",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6"
+	}
 }
