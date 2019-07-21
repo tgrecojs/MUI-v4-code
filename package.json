@@ -1,20 +1,24 @@
 {
-  "name": "video-code",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "parcel source/index.html"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.3"
-  },
-  "dependencies": {
-    "@material-ui/core": "^4.1.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  }
+	"name": "video-code",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "parcel source/theme/index.html",
+		"dev:altport": "parcel source/theme/index.html --port 2020 --no-cache"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"babel-eslint": "^10.0.2",
+		"eslint": "^6.0.1",
+		"eslint-plugin-react": "^7.14.2",
+		"parcel-bundler": "^1.12.3"
+	},
+	"dependencies": {
+		"@material-ui/core": "^4.1.2",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6"
+	}
 }
