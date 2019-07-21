@@ -4,12 +4,16 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "parcel source/Style-APIs/index.html"
+		"dev": "parcel source/theme/index.html",
+		"dev:altport": "parcel source/theme/index.html --port 2020 --no-cache"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
+		"babel-eslint": "^10.0.2",
+		"eslint": "^6.0.1",
+		"eslint-plugin-react": "^7.14.2",
 		"parcel-bundler": "^1.12.3"
 	},
 	"dependencies": {
