@@ -4,7 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "parcel source/Style-APIs/index.html"
+		"dev": "parcel source/theme/index.html",
+		"dev:altport": "parcel source/theme/index.html --port 2020 --no-cache"
 	},
 	"keywords": [],
 	"author": "",
