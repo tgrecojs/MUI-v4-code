@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => createStyles({
     padding: theme.spacing(2),
     display: 'flex',
     height: 100,
-    WebkitJustifyContent: 'space-around'
+    justifyContent: 'space-around'
   },
   buttonStyles: {
     backgroundColor: theme.palette.primary.dark,
