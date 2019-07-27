@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"dev": "parcel source/theme/index.html",
-		"dev:altport": "parcel source/theme/index.html --port 2020 --no-cache"
+		"dev:altport": "parcel source/theme/index.html --port 2020 --no-cache",
+		"start": "npm run dev:altport"
 	},
 	"keywords": [],
 	"author": "",
