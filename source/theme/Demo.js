@@ -1,35 +1,32 @@
 import React from 'react'
 import { Box, Button } from '@material-ui/core'
-import { makeStyles, createStyles } from '@material-ui/styles'
+import { makeStyles } from '@material-ui/styles'
 
-const useStyles = makeStyles(({ palette, spacing }) => ({
+const useStyles = makeStyles(({ palette: { primary, secondary, common }, spacing }) => ({
 	root: {
-		backgroundColor: palette.primary.light,
+		backgroundColor: primary.light,
 		padding: spacing(2),
 		display: 'flex',
 		height: '100vh',
 		justifyContent: 'space-around'
 	},
 	buttonStyles: {
-		width: '30%',
+		backgroundColor: secondary.dark,
+		color: common.white,
 		maxHeight: 120,
-		backgroundColor: palette.secondary.dark,
+		width: '30%',
 		'&:hover': {
-			backgroundColor: palette.secondary.light
+			backgroundColor: secondary.light
 		}
 	}
 }))
 
 const ThemeDemo = () => {
-	const { buttonStyles, root } = useStyles()
+	const { root, buttonStyles } = useStyles()
 	return (
 		<Box className={`${root}`}>
-			<Button variant="contained" className={`${buttonStyles}`}>
-				Existing User Sign In
-			</Button>
-			<Button variant="contained" className={`${buttonStyles}`}>
-				User Sign Up
-			</Button>
+			<Button className={`${buttonStyles}`}>Login</Button>
+			<Button className={`${buttonStyles}`}>Sign Up</Button>
 		</Box>
 	)
 }
