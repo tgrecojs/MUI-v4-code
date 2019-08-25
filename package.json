@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"dev": "parcel source/theme/index.html",
-		"dev:altport": "parcel source/theme/index.html --port 2020 --no-cache",
+		"dev:altport": "parcel source/dark-mode/index.html --port 2020 --no-cache",
 		"start": "npm run dev:altport"
 	},
 	"keywords": [],
@@ -15,8 +15,9 @@
 		"parcel-bundler": "^1.12.3"
 	},
 	"dependencies": {
-		"@material-ui/core": "^4.1.2",
-		"react": "^16.8.6",
-		"react-dom": "^16.8.6"
+		"@material-ui/core": "^4.3.3",
+		"@material-ui/icons": "^4.2.1",
+		"react": "^16.9.0",
+		"react-dom": "^16.9.0"
 	}
 }
