@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { Switch, AppBar, FormControlLabel } from '@material-ui/core'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import { Switch, FormControlLabel } from '@material-ui/core'
 import Home from './Card'
 import Layout from './Layout'
 import Card from './Card'
@@ -17,14 +17,13 @@ const themeObject = {
 	}
 }
 
-const useTheme = () => {
+const useDarkMode = () => {
 	const [theme, setTheme] = useState(themeObject)
 
 	const {
 		palette: { type }
 	} = theme
-
-	const toggleDarkTheme = () => {
+	const toggleDarkMode = () => {
 		const updatedTheme = {
 			...theme,
 			palette: {
@@ -32,26 +31,21 @@ const useTheme = () => {
 				type: type === 'light' ? 'dark' : 'light'
 			}
 		}
-
 		setTheme(updatedTheme)
 	}
-	return [theme, toggleDarkTheme]
+	return [theme, toggleDarkMode]
 }
-const Header = ({ onToggleDark }) => (
-	<AppBar color="primary" position="static">
-		<Switch onClick={onToggleDark} />{' '}
-	</AppBar>
-)
 
 const App = () => {
-	const [theme, toggleDarkTheme] = useTheme()
+	const [theme, toggleDarkMode] = useDarkMode()
 
 	const themeConfig = createMuiTheme(theme)
+	console.log(themeConfig)
 	return (
 		<MuiThemeProvider theme={themeConfig}>
 			<Layout>
+				<FormControlLabel control={<Switch onClick={toggleDarkMode} label={`Toggle Dark Mode`} />} />
 				<Card />
-				<FormControlLabel control={<Switch onClick={toggleDarkTheme} />} label="Toggle Dark Mode" />
 			</Layout>
 		</MuiThemeProvider>
 	)
